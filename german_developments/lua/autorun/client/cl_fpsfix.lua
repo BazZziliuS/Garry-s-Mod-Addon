@@ -41,6 +41,8 @@ net.Receive( "ClearLagsDed", function( len)
 	--end
 end)
 
+
+ -- ТУМАН ВОКРУГ ИГРОКА
 hook.Add( "SetupWorldFog", "FoxController", function()
 	if globalFogDed then 
 		render.FogMode( 1 ) 
@@ -55,10 +57,12 @@ hook.Add( "SetupWorldFog", "FoxController", function()
 	end
 end )
 
+
+-- ЗАКРАС СКАЙБОКСА В СПЛОШНОЙ ЦВЕТ
 hook.Add( "SetupSkyboxFog", "FoxControllerSky", function()
 	if globalFogDed then 
 		render.FogMode(MATERIAL_FOG_LINEAR)
-		render.FogStart( (globalFogDed-600)/16-(200/16) )
+		render.FogStart( (globalFogDed-800)/16-(200/16) )
 		render.FogEnd( globalFogDed/16-(200/16)  )
 		render.FogMaxDensity( 1 )
 

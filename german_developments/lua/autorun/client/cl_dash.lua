@@ -26,42 +26,28 @@
 
 ]]
 
-	local rules_text = [[
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
+	local rules_text = [[	
+		1.Правила могут измениться в любое время суток.
+		2. Незнание правил не освобождает от ответственности.
+		3. Запрещено выдумывать свои правила или придумывать к ним обходной путь.
+
+
+
+						Правила общения в чате
+	● Запрещено оскорблять других игроково, а так же запрещено оскорблять родителей
+	● Запрещена реклама других серверов, стим-групп (За рекламу в любой форме бан).
+	● Запрещено использовать голосовой чат для создания громких шумов, пищания и 
+	   других неприятных звуков.
+	● Чат OOC используеться исключительно для NonRP ситуаций и т.п.
+	● Для вызова администрации нажми C > Репорт меню.
+
+
+
 			● Главное правило это играй так как хочешь чтобы играли и другие!
 ]]
 local messege =[[
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
-			● Главное правило это играй так как хочешь чтобы играли и другие!
+● Тут пусто... Даже слишком.
+
 ]]
 
 
@@ -83,12 +69,61 @@ local clanes = [[
 				draw.SimpleText( 'Прекрасное', 'MainScreenLogoLabel', x + w/2, -80 + h/2, Color( 255,255,255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER )
 				draw.SimpleText( 'Спасибо, что выбрали нас!', 'MainScreenLogoSmallLabel', x + w/2, 10 + h/2, Color( 255,255,255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER )
 				
-				draw.RoundedBox( 6, x + w/2 - 300, h - 130, 600, 100, Color( 0,0,0,100) )
-				draw.DrawText( "Есть автоматизированный донат на клавише F1    ", "MainScreenLogoSmallLabel", x + w/2, h-117, Color( 255,255,255 ), TEXT_ALIGN_CENTER )
-				draw.DrawText( "Наш дискорд: discord.gg/2GQxXn2uQH    ", "MainScreenLogoSmallLabel", x + w/2, h-95, Color( 255,255,255 ), TEXT_ALIGN_CENTER )
-				draw.DrawText( "Есть предложение? Пиши в дискорд!    ", "MainScreenLogoSmallLabel", x + w/2, h-74, Color( 255,255,255 ), TEXT_ALIGN_CENTER )
+				draw.RoundedBox( 6, x + w/2 - 300, h - 130, 600, 100, Color( 0,0,0,120) )
+				draw.DrawText( "На сервере есть донат на клавише F1    ", "MainScreenLogoSmallLabel", x + w/2, h-117, Color( 255,255,255 ), TEXT_ALIGN_CENTER )
+				draw.DrawText( "и BATTLEPASS на клавише F2    ", "MainScreenLogoSmallLabel", x + w/2, h-95, Color( 255,255,255 ), TEXT_ALIGN_CENTER )
+				draw.DrawText( "Купоны каждую неделю в vk.com/prekrasnoerp    ", "MainScreenLogoSmallLabel", x + w/2, h-74, Color( 255,255,255 ), TEXT_ALIGN_CENTER )
 				draw.DrawText( "", "MainScreenLogoMoarSmallLabel", x + w/2, h-77, Color( 255,255,255 ), TEXT_ALIGN_CENTER )
 
+				
+				local nn = 146 -- Положении по горизонтали
+				local bb = 465 -- Положении по вертикали
+				local mm = Color( 0,0,0,180 )
+
+				local id = CakeScreens.Buttons.CreateButton( x + nn+144, y + bb, 60, 25, function()
+					RunConsoleCommand("say","/donate")
+				end)
+				draw.RoundedBox( 6, x + nn+112, y + bb, 74, 25, mm )
+				if CakeScreens.Buttons.getButtonHover( id ) then
+					draw.RoundedBox( 6, x + nn+112, y + bb, 74, 25, Color( 255,255,255,10 ) )
+				end
+				draw.DrawText( 'DONATE', 'MainScreenLogoSmallLabel', x + nn+114, y + bb, Color( 255,255,255 ) )
+				
+				local id = CakeScreens.Buttons.CreateButton( x + nn+193, y + bb, 84, 25, function()
+					RunConsoleCommand("battlepass")
+				end)
+				draw.RoundedBox( 6, x + nn+193, y + bb, 106, 25, mm )
+				if CakeScreens.Buttons.getButtonHover( id ) then
+					draw.RoundedBox( 6, x + nn+193, y + bb, 106, 25, Color( 255,255,255,10 ) )
+				end
+				draw.DrawText( 'BATTLEPASS', 'MainScreenLogoSmallLabel', x + nn+196, y + bb, Color( 255,255,255 ) )
+				
+				local id = CakeScreens.Buttons.CreateButton( x + nn+306, y + bb, 75, 25, function()
+					gui.OpenURL( "https://discord.gg/2GQxXn2uQH" )
+				end)
+				draw.RoundedBox( 6, x + nn+306, y + bb, 85, 25, mm )
+				if CakeScreens.Buttons.getButtonHover( id ) then
+					draw.RoundedBox( 6, x + nn+306, y + bb, 85, 25, Color( 255,255,255,10 ) )
+				end
+				draw.DrawText( 'DISCORD', 'MainScreenLogoSmallLabel', x + nn+312, y + bb, Color( 255,255,255 ) )
+				
+				local id = CakeScreens.Buttons.CreateButton( x + nn, y + bb, 105, 25, function()
+					gui.OpenURL( "http://vk.com/prekrasnoerp" )
+				end)
+				draw.RoundedBox( 6, x + nn, y + bb, 105, 25, mm )
+				if CakeScreens.Buttons.getButtonHover( id ) then
+					draw.RoundedBox( 6, x + nn, y + bb, 105, 25, Color( 255,255,255,10 ) )
+				end
+				draw.DrawText( 'VKONTAKTE', 'MainScreenLogoSmallLabel', x + nn+3, y + bb, Color( 255,255,255 ) )
+				
+				local id = CakeScreens.Buttons.CreateButton( x +  nn+398, y + bb, 162, 25, function()
+					gui.OpenURL( "https://discord.gg/2GQxXn2uQH" )
+				end)
+				draw.RoundedBox( 6, x +  nn+398, y + bb, 90, 25, mm )
+				if CakeScreens.Buttons.getButtonHover( id ) then
+					draw.RoundedBox( 6, x + nn+398, y + bb, 90, 25, Color( 255,255,255,10 ) )
+				end
+				draw.DrawText( 'Вакансии', 'MainScreenLogoSmallLabel', x +  nn+401, y + bb, Color( 255,255,255 ) )
 				
 				
 			end,
@@ -138,10 +173,10 @@ local clanes = [[
 				draw.RoundedBox( 0, x, y, w, 60, Color( 0,0,0,140 ) )
 				draw.SimpleText( 'Правила', 'MainScreenHeader', x + w/2, y + 13, Color( 255,255,255 ), TEXT_ALIGN_CENTER, _ )
 				
-				draw.DrawText( rules_text, 'MainScreenLogoMoarSmallLabel', x + 3, y + 63, Color( 255,255,255 ) )
+				draw.DrawText( rules_text, 'MainScreenLogoMoarSmallLabel', x + 33, y + 63, Color( 255,255,255 ) )
 				
 				local id = CakeScreens.Buttons.CreateButton( x + 290, y + 430, 222, 30, function()
-					gui.OpenURL( "discord.gg/2GQxXn2uQH" )
+					gui.OpenURL( "https://discord.gg/2GQxXn2uQH" )
 				end)
 				
 				draw.RoundedBox( 6, x + 290, y+430, 222, 30, Color( 60,60,60,255 ) )
@@ -186,7 +221,7 @@ local clanes = [[
 				draw.RoundedBox( 0, x, y, w, 60, Color( 0,0,0,140 ) )
 				draw.SimpleText( 'Ответа на часто задаваемые вопросы', 'MainScreenHeader', x + w/2, y + 13, Color( 255,255,255 ), TEXT_ALIGN_CENTER, _ )
 				
-				draw.DrawText( messege, 'MainScreenLogoMoarSmallLabel', x + 3, y + 63, Color( 255,255,255 ) )
+				draw.DrawText( messege, 'MainScreenLogoMoarSmallLabel', x + 33, y + 63, Color( 255,255,255 ) )
 
 			-- draw.DrawText( '[Тут будет написаны возможные обновления и прочая информация]', 'MainScreenLogoSmallLabel', x + 90, y + 362, Color( 255,255,255 ) )
 			-- draw.DrawText( '[Тут будет написаны возможные обновления и прочая информация]', 'MainScreenLogoSmallLabel', x + 90, y + 382, Color( 255,255,255 ) )
@@ -323,9 +358,9 @@ local clanes = [[
 	
 	function CakeScreens.MainLuaScreen()
 		
-		CakeScreens.Start3D2D( Vector(-3108, 2220, 174.490601), Angle(0,270,90), 0.25 ) //Тут менять позицию
+		CakeScreens.Start3D2D( Vector(-3108, 2220, 174.490601), Angle(0,270,90), 0.25 ) //Тут менять позицию и размер
 		
-		draw.RoundedBox( 6, 105, 0, 800, 500, Color( 0,0,0,244 ) )
+		draw.RoundedBox( 6, 105, 0, 800, 500, Color( 0,0,0,244 ) ) -- Тут негатив
 		draw.RoundedBox( 6, 108, 3, 794, 494, Color( 93,118,203,100 ) ) //Тут менять цвет
 		
 		CakeScreens.Buttons.ClearButtons()
@@ -362,7 +397,7 @@ local clanes = [[
 		cam.End3D2D()
 	end
 	
-	hook.Add( 'PlayerBindPress', 'CakeRP Screens', function( ply, bind )
+	hook.Add( 'PlayerBindPress', 'PrecrasnoeRPScreens', function( ply, bind )
 		
 		if bind:find( "+use" ) or bind:find("+attack") then
 			for k,v in pairs( CakeScreens.Buttons.List ) do
@@ -379,11 +414,11 @@ local clanes = [[
 
 	
 	function CakeScreens.Draw()
-		if LocalPlayer():GetPos():Distance(Vector(-3128.223389, 2162.985840, 174.490601)) < 1000 then
+		if LocalPlayer():GetPos():Distance(Vector(-3128.223389, 2162.985840, 174.490601)) < 700 then
 			CakeScreens.MainLuaScreen()
 		end
 		if LocalPlayer():GetPos():Distance(Vector( -3128.223389, 2162.985840, 174.490601 )) < 300 then
 		end
 	end
 	
-	hook.Add( 'PostDrawTranslucentRenderables', 'Cakerp lua screens', CakeScreens.Draw )
+	hook.Add( 'PostDrawTranslucentRenderables', 'PrecrasnoeRPScreen', CakeScreens.Draw )

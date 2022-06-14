@@ -31,3 +31,17 @@ hook.Add("PlayerLoadout", "IGS.Medmask", function(pl)
 		end
 	end
 end)
+
+
+-- Бан переданных аккаунтов
+-- if not file.Exists("AntiShared", "DATA") then
+--     file.CreateDir("AntiShared")
+-- end
+hook.Add("PlayerAuthed", "AntiShared", function(ply)
+    if ply:OwnerSteamID64() != ply:SteamID64() then
+        -- file.Write( "AntiShared/".. ply:SteamID64() ..".txt", "Основной аккаунт " .. ply:OwnerSteamID64() )
+        RunConsoleCommand("ulx", "banid", ply:SteamID(), "0", "Зайдите с основного аккаунта!")
+    end
+end)
+
+

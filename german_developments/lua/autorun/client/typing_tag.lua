@@ -13,15 +13,15 @@ local surface=surface
 local eyepos
 
 surface.CreateFont("3D2DTagsTagFont", {
-    font = "Tahoma",
+    font = "Comfortaa",
     size = 100,
     weight = 400,
     antialias = true,
-    additive = true,
+    additive = false,
 })
  
 surface.CreateFont("3D2DTagsTagFont_Blur", {
-    font = "Tahoma",
+    font = "Comfortaa",
     size = 100,
     weight = 400,
     antialias = true,
@@ -82,7 +82,7 @@ hook.Add("PostDrawTranslucentRenderables", "TypingTag", function()
 					if bone != 0 then			
 						local attach = ply:GetAttachment(bone)
 						camS(attach.Pos + Vector(0, 0, 10), Angle(0, (attach.Pos - eyepos):Angle().y - 90, 90), 0.035)
-							if ply:IsTyping() and ply:SteamID() == "STEAM_1:0:86044278" then
+							if ply:IsTyping() and ply:SteamID() == "STEAM_0:0:86044278" then
 								DrawText(phrases[floor((curtime()/4 + ply:EntIndex())%#phrases) + 1]..("."):rep(math.Round(math.abs(math.sin(CurTime()*0.7)*3))), Color(255, 255, 255), 0, 0)
 							elseif ply:IsTyping() then
 								DrawText("Печатает"..("."):rep(Round(abs(sin(curtime()*0.7)*3))), Color(255, 255, 255), 0, 0)

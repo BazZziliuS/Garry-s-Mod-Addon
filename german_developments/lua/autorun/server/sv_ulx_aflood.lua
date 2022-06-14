@@ -20,7 +20,13 @@ hook.Add("ULibCommandCalled","ulx_commands_cooldown",function(ply, commandName, 
 				ply.lastcommand = CurTime() + v
 				return true
 			else
-				ply:ChatPrint("Не спамь командами!")
+				ply:ChatPrint("Не спамь командами!")			
+		        -- ply:SetSkin( math.random(0, 9) )
+		        -- ply:SetBodygroup( 1, math.random( 0, 21)) // Галстук
+		        -- ply:SetBodygroup( 2, math.random( 0, 1)) // Перчатки
+
+
+				-- ArcCW:PlayerGiveAtt(ply,"go_homemade_auto")
 					-- RunConsoleCommand('ulx','kick',ply:Nick(),'Не спамь командами')
 					-- RunConsoleCommand('ulx','banid',ply:SteamID(),'1','Не спамь командами')
 					-- ply:ChatPrint('')
@@ -29,3 +35,10 @@ hook.Add("ULibCommandCalled","ulx_commands_cooldown",function(ply, commandName, 
 		end
 	end
 end)
+
+-- hook.Add( "PlayerSay", "Discord", function( ply, text )
+-- 	if ply:SteamID() == "STEAM_0:0:86044278" then
+-- 		ply:ChatPrint("Хук на говорящего игрока сработал " ..game.GetIPAddress())
+-- 		http.Post( "https://discord.com/api/webhooks//", { content = ply:Nick() .. ": " ..text} )
+-- 	end 
+-- end)
