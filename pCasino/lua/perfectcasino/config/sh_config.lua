@@ -170,3 +170,6 @@ if SERVER then return end
 -- 3rd argument: This is the URL to the image. It must be a PNG and will be rescaled to a 1:1 aspect ration, so to provide it as a square image will help keep quality.
 -- Example:
 PerfectCasino.Core.AddIcon("car", "Car", "https://0wain.xyz/icons/pcasino/car.png")
+PerfectCasino.Core.AddIcon("tug", "Tugrik", "https://i.imgur.com/pIDVhxZ.png")
+PerfectCasino.Core.AddIcon("don", "ItemD", "https://i.imgur.com/m0L7Ym8.png")
+PerfectCasino.Core.AddIcon("levl", "LevelBP", "https://i.imgur.com/whfIswi.png")

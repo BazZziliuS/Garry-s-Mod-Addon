@@ -1,3 +1,8 @@
+### ЛОБАВЛЕН НПС ДЛЯ https://github.com/BazZziliuS/Garry-s-Mod-Addon/tree/main/Name_Changer/lua
+
+
+
+
 
 <p align="center"><a href="https://www.youtube.com/watch?v=Q1wx7qCR87k"><img src="https://i.imgur.com/xJORcAQ.png"></a></p>
 
